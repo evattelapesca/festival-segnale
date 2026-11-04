@@ -30,52 +30,57 @@
         Festival, sedi ed eventi sono inventati per questa esercitazione e non rappresentano un evento reale.
       </p>
     </section>
-      <section class="content-section" aria-labelledby="titolo-luoghi">
-    <h2 id="titolo-luoghi">I luoghi</h2>
+  <section class="content-section" aria-labelledby="titolo-luoghi">
+  <h2 id="titolo-luoghi">Luoghi</h2>
+  <p>Gli appuntamenti si svolgono in tre sedi. Consulta il programma per trovare la sede di ciascun evento.</p>
 
-    <div class="swiper luoghi-swiper">
-      <div class="swiper-wrapper">
-        <figure class="swiper-slide">
-          <img src="assets/luoghi/mirafiori.jpg"
-               alt="Fotografia di Mirafiori"
-               width="900" height="600">
-          <figcaption>
-            <h3>Mirafiori</h3>
-            <p>Uno spazio dedicato agli incontri e ai progetti condivisi.</p>
+  <div class="swiper luoghi-swiper">
+    <div class="swiper-wrapper">
+      <article class="swiper-slide event-card">
+        <figure>
+          <img
+            src="assets/luoghi/mirafiori.jpg"
+            alt="Mirafiori, sede degli incontri del festival"
+          >
+          <figcaption class="event-body">
+            <h3>Sede Mirafiori</h3>
+            <p>Qui si svolgono gli incontri e talk dedicati al graphic design.</p>
           </figcaption>
         </figure>
+      </article>
 
-        <figure class="swiper-slide">
-          <img src="assets/luoghi/politecnico-valentino.jpg"
-               alt="Fotografia di Politecnico di Torino, sede Valentino"
-               width="900" height="600">
-          <figcaption>
-            <h3>Castello del Valentino</h3>
-            <p>Un luogo per laboratori, sperimentazioni e attività pratiche.</p>
+      <article class="swiper-slide event-card">
+        <figure>
+          <img
+            src="assets/luoghi/politecnico-valentino.jpg"
+            alt="Castello del Valentino, sede dei laboratori del festival"
+          >
+          <figcaption class="event-body">
+            <h3>Politecnico-Valentino</h3>
+            <p>La sede dei laboratori, per sperimentare con materiali e mappe.</p>
           </figcaption>
         </figure>
+      </article>
 
-        <figure class="swiper-slide">
-          <img src="assets/luoghi/sede-centrale.jpg"
-               alt="Fotografia di Sede Centrale del Politecnico di Torino"
-               width="900" height="600">
-          <figcaption>
-            <h3>Sede Centrale</h3>
-            <p>La sede delle mostre e dei percorsi del festival.</p>
+      <article class="swiper-slide event-card">
+        <figure>
+          <img
+            src="assets/luoghi/sede-centrale.jpg"
+            alt="Sede Centrale, sede delle mostre del festival"
+          >
+          <figcaption class="event-body">
+            <h3>Sede centrale</h3>
+            <p>Lo spazio espositivo che ospita le mostre del festival.</p>
           </figcaption>
         </figure>
-      </div>
-
-      <div class="swiper-button-prev" aria-label="Sede precedente"></div>
-      <div class="swiper-button-next" aria-label="Sede successiva"></div>
-      <div class="swiper-pagination"></div>
+      </article>
     </div>
 
-    <p class="reading-text">
-      Festival, sedi ed eventi sono inventati per questa esercitazione e non rappresentano
-      un evento reale. Consulta il <a href="programma.html">programma</a> per gli orari.
-    </p>
-  </section>
+    <div class="swiper-pagination"></div>
+    <button class="swiper-button-prev" type="button" aria-label="Foto precedente"></button>
+    <button class="swiper-button-next" type="button" aria-label="Foto successiva"></button>
+  </div>
+</section>
   <section class="content-section" aria-labelledby="titolo-mappa">
   <h2 id="titolo-mappa">Dove si trovano le sedi</h2>
 
@@ -132,6 +137,10 @@
   new Swiper(".luoghi-swiper", {
     slidesPerView: 1,
     spaceBetween: 24,
+    keyboard: {
+    enabled: true,
+    onlyInViewport: true  
+    },
     pagination: {
       el: ".luoghi-swiper .swiper-pagination",
       clickable: true
