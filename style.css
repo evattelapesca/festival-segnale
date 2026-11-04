@@ -224,3 +224,36 @@ h3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+.luoghi-swiper {
+  margin: 1.5rem 0 2rem;
+  padding-bottom: 2.5rem;
+}
+
+.luoghi-swiper .swiper-slide {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.luoghi-swiper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.luoghi-swiper figcaption {
+  padding: 1rem 1.25rem;
+}
+
+.luoghi-swiper figcaption h3 {
+  margin-top: 0;
+}
+
+.luoghi-swiper figcaption p {
+  margin-bottom: 0;
+}
