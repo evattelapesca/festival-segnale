@@ -6,8 +6,7 @@
   --colore-primario: #E86642;
   --colore-primario-scuro: #9C23A7;
   --colore-sfondo: #f5f2e9;
-  --colore-testo: #292027
-  ;
+  --colore-testo: #292027;
   --font-testo: Zain, "Aptos", sans-serif;
   --font-titoli: Unbounded, "Poppins", serif;
 }
@@ -66,6 +65,10 @@ a:focus-visible {
 }
 
 nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
   margin-top: 1rem;
 }
 
@@ -77,6 +80,14 @@ nav a {
 
 nav a[aria-current="page"] {
   font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 1rem;
+  }
 }
 
 .intro {
