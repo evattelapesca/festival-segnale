@@ -44,6 +44,10 @@ a:focus-visible {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--colore-sfondo);
   padding: 1.25rem 0;
   border-bottom: 4px solid var(--colore-primario);
 }
