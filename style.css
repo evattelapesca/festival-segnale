@@ -8,8 +8,8 @@
   --colore-sfondo: #f5f2e9;
   --colore-testo: #292027
   ;
-  --font-testo: Zain, Aptos, sans-serif;
-  --font-titoli: Poppins, "Times New Roman", serif;
+  --font-testo: Zain, "Aptos", sans-serif;
+  --font-titoli: Unbounded, "Poppins", serif;
 }
 
 * {
