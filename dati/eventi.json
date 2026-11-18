@@ -42,7 +42,7 @@
     "immagine": "assets/oggetti-dialogo.svg",
     "immagine_alt": "Due forme geometriche si fronteggiano sopra una linea comune.",
     "sede_id": 1
-  }
+  },
   {
     "id": 5,
     "titolo": "Mappe da abitare",
@@ -64,5 +64,5 @@
     "immagine": "assets/progettare-insieme.svg",
     "immagine_alt": "Moduli di colori diversi si incastrano in una composizione comune.",
     "sede_id": 2
-  },
+  }
 ]
