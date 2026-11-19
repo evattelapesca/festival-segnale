@@ -1,0 +1,5 @@
+## Sessione 1: 18-11-26
+- **Richieste**: diagramma Mermaid delle entità Evento e Sede in `SCHEMA.md`; codice JavaScript con `fetch` per caricare `eventi.json` e `sedi.json` in `programma.html`; aggiungere a `info.html` i dati meteo attuali di Torino tramite Open-Meteo. 
+- **Modifiche al prompt:** dopo la prima spiegazione, ho chiestoo delle istruzioni per `programma.js` più precise indicando chiaramente le righe da aggiungere o sostituire.
+- **Verifica:** le verifiche sono state attuate le seguendo le istruzioni nel file fornito dal professore `requisiti-nuova-consegna.md`, senza richieste all'AI. È stato solo chiarito autonomamente dall'AI che `fetch` richiede di servire le pagine via HTTP e non di aprirle direttamente con `file://`.
+- **Problemi e soluzioni:** inizialmente non erano noti i nomi delle classi HTML del sito; è stato necessario allegare `programma.html`, e le istruzioni sono state adattate alle classi esistenti (`event-card`, `event-body`, `event-meta`, `event-place`). 
