@@ -127,6 +127,33 @@
     </li>
   </ul>
 </section>
+<section class="content-section" aria-labelledby="titolo-meteo">
+  <h2 id="titolo-meteo">Meteo a Torino adesso</h2>
+  <p id="meteo-stato" class="reading-text" aria-live="polite">
+    Caricamento dei dati meteo…
+  </p>
+
+  <div id="meteo-dati" hidden>
+    <p class="reading-text">
+      Temperatura: <span id="meteo-temperatura"></span>
+    </p>
+    <p class="reading-text">
+      Vento: <span id="meteo-vento"></span>
+    </p>
+    <p class="reading-text">
+      Ora del dato: <time id="meteo-ora"></time>
+    </p>
+  </div>
+
+  <p class="reading-text">
+    È il meteo attuale, non una previsione per le date del festival.
+  </p>
+  <p class="reading-text">
+    Dati meteo:
+    <a href="https://open-meteo.com/">Open-Meteo</a>,
+    licenza <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+  </p>
+</section>
   </main>
 
   <footer class="site-footer">
@@ -153,6 +180,7 @@
     }
   });
 </script>
+<script src="info-meteo.js" defer></script>
 </body>
 </html>
 
